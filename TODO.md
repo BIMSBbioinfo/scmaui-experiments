@@ -1,16 +1,27 @@
  
-## to do list after meeting 18.05.2022
+## TODO List
 
-Investigate why a bigger latent space cannot make better performances and different batch effect handling schemes. 
+- [x] Batch effect
+	- [x]  Without batch effect handling
+	- [x]  Covariates
+	- [x]  Adversory
+	- [x]  Both
+	- [x]  Include Site in the batch effect handling
 
-- [ ] Batch effect
-	- [ ]  Without batch effect handling
-	- [ ]  Covariates
-	- [ ]  Adversory
-	- [ ]  Both
-- [ ]  	Reconstruction loss
-	- [ ]  Bigger decoder model
-	- [ ]  Weights on different losses
+
+- [x]  	Reconstruction loss
+	- [x]  Bigger decoder model
+
+- [ ]  Data Preprocessing
+	- [x] Log1p transformation for GEX
+	- [ ] ATAC-seq
+
 - [ ] Scheduler 
    - [ ] Learning rate 
    - [ ] KL loss
+
+- [ ] Benchmarking with other methods
+   - [ ] Conventional methods (e.g. PCA + SVM)
+   - [ ] Seurat
+   - [ ] scMOFA
+   - [ ] scvi
