@@ -84,8 +84,8 @@ def arg_parser():
 args = arg_parser()
 set_seed(950410)
 
-adatas = load_data(["../data/gex_small.hdf5", 
-                    "../data/atac_small.hdf5"], names=['gex', 'atac'])
+adatas = load_data(["../data/GSE194122/gex_small.hdf5", 
+                    "../data/GSE194122/atac_small.hdf5"], names=['gex', 'atac'])
 
 scanpy.pp.log1p(adatas["input"][0])
 epi.pp.filter_features(adatas["input"][1], min_cells=933)
